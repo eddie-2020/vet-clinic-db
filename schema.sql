@@ -3,7 +3,7 @@
 CREATE TABLE dbo.animal
 (
     id INT NOT NULL PRIMARY KEY, -- primary key column
-    name [NVARCHAR](100) NOT NULL,
+    name string NOT NULL,
     date_of_birth DATE,
     escape_attempts INT,
     neutered boolean,
