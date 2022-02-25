@@ -10,3 +10,7 @@ CREATE TABLE dbo.animal
     weight_kg DECIMAL
     -- specify more columns here
 );
+
+ALTER TABLE dbo.animal
+    ADD species VARCHAR(60);
+    

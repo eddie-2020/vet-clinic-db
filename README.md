@@ -4,7 +4,6 @@ In this project I have created a relational database to create the initial data 
 
 # Results
 
-![](/assets/animalTable.PNG)
 ![](/assets/createTable1.PNG)
 ![](/assets/createTable2.PNG)
 
@@ -22,6 +21,14 @@ In this project I have created a relational database to create the initial data 
  - `neutered`: boolean
  - `weight_kg`: decimal
 
+- Add a column `species` of type `string` to your `animals` table. Modify your  `schema.sql` file.
+- Insert the following data:
+ - Animal: His name is Charmander. He was born on Feb 8th, 2020, and currently weighs -11kg. He is not neutered and he has never tried to escape.
+ - Animal: Her name is Plantmon. She was born on Nov 15th, 2022, and currently weighs -5.7kg. She is neutered and she has tried to escape 2 times.
+ - Animal: His name is Squirtle. He was born on Apr 2nd, 1993, and currently weighs -12.13kg. He was not neutered and he has tried to escape 3 times.
+ - Animal: His name is Angemon. He was born on Jun 12th, 2005, and currently weighs -45kg. He is neutered and he has tried to escape once.
+ - Animal: His name is Boarmon. He was born on Jun 7th, 2005, and currently weighs 20.4kg. He is neutered and he has tried to escape 7 times.
+ - Animal: Her name is Blossom. She was born on Oct 13th, 1998, and currently weighs 17kg. She is neutered and she has tried to escape 3 times.
 
 ## Getting Started
 
