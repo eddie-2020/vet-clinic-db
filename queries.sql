@@ -26,7 +26,6 @@ BEGIN TRAN
 DELETE animal
 ROLLBACK;
 
-
 BEGIN TRAN
 DELETE FROM animal WHERE date_of_birth > '01-01-2022'
 SAVE TRAN delete_some_data;
@@ -34,7 +33,6 @@ UPDATE animal SET weight_kg = -1 * weight_kg;
 ROLLBACK TRAN delete_some_data;
 UPDATE animal SET weight_kg = -1 * weight_kg WHERE weight_kg < 0;
 ROLLBACK;
-
 
 SELECT COUNT(*) FROM animal;
 
