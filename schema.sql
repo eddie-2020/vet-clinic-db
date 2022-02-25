@@ -49,3 +49,4 @@ ADD owner_id INT,
 CONSTRAINT owner_id
 FOREIGN KEY(owner_id)
 REFERENCES species(id);
+
