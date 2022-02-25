@@ -13,3 +13,4 @@ CREATE TABLE dbo.animal
 
 ALTER TABLE dbo.animal
     ADD species VARCHAR(60);
+    
