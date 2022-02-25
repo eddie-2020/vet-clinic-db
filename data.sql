@@ -47,39 +47,19 @@ WHERE name = 'Agumon';
 
 UPDATE animal
 SET owners_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell') 
-WHERE name = 'Pikachu';
-
-UPDATE animal
-SET owners_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell') 
-WHERE name = 'Gabumon';
+WHERE name = 'Pikachu' OR name = 'Gabumon';
 
 -- Bob owns Devimon and Plantmon.
 UPDATE animal
 SET owners_id = (SELECT id FROM owners WHERE full_name = 'Bob')
-WHERE name = 'Devimon';
-
-UPDATE animal
-SET owners_id = (SELECT id FROM owners WHERE full_name = 'Bob')
-WHERE name = 'Plantmon';
+WHERE name = 'Devimon' OR name = 'Plantmon';
 
 -- Melody Pond owns Charmander, Squirtle, and Blossom.
 UPDATE animal
 SET owners_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') 
-WHERE name = 'Charmander';
-
-UPDATE animal
-SET owners_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') 
-WHERE name = 'Squirtle';
-
-UPDATE animal 
-SET owners_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') 
-WHERE name = 'Blossom';
+WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
 
 -- Dean Winchester owns Angemon and Boarmon.
 UPDATE animal 
 SET owners_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester') 
-WHERE name = 'Angemon';
-
-UPDATE animal 
-SET owners_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester') 
-WHERE name = 'Boarmon';
+WHERE name = 'Angemon' OR name = 'Boarmon';

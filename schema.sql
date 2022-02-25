@@ -18,7 +18,7 @@ ALTER TABLE dbo.animal
 CREATE TABLE dbo.owners
 (
    id INT NOT NULL PRIMARY KEY, -- primary key column
-   first_name [NVARCHAR](50) NOT NULL,
+   first_name string NOT NULL,
    age INT
 );
 GO
@@ -28,7 +28,7 @@ GO
 CREATE TABLE dbo.species
 (
    id INT NOT NULL PRIMARY KEY, -- primary key column
-   name [NVARCHAR](50) NOT NULL
+   name string NOT NULL
 );
 GO
 
