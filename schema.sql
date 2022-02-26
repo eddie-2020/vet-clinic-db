@@ -45,8 +45,40 @@ REFERENCES species(id);
 
 -- Add column owner_id which is a foreign key referencing the owners table
 ALTER TABLE animal
-ADD owner_id INT,
-CONSTRAINT owner_id
-FOREIGN KEY(owner_id)
+ADD owners_id INT,
+CONSTRAINT owners_id
+FOREIGN KEY(owners_id)
 REFERENCES species(id);
 
+
+CREATE TABLE dbo.vets
+(
+   id INT NOT NULL PRIMARY KEY, -- primary key column
+   name string NOT NULL,
+   age INT,
+   date_of_graduation DATE,
+   PRIMARY KEY(id)
+);
+GO
+
+CREATE TABLE dbo.specializations
+(
+   species_id INT,
+   vets_id INT,
+   CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id),
+   CONSTRAINT fk_vets FOREIGN KEY(vets_id) REFERENCES vets(id)
+);
+GO
+
+CREATE TABLE dbo.visits
+(
+   animal_id INT,
+   vets_id INT,
+   date_of_visits DATE,
+   CONSTRAINT fk_animal FOREIGN KEY(animal_id) REFERENCES animal(id),
+   CONSTRAINT fk_vets FOREIGN KEY(vets_id) REFERENCES vets(id)
+);
+GO
+
+CREATE INDEX animal_id_visits_index ON visits(animal_id ASC)
+CREATE INDEX vets_id_visits_index ON visits(vets_id ASC)
