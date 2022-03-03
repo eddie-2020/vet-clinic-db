@@ -82,3 +82,4 @@ GO
 
 CREATE INDEX animal_id_visits_index ON visits(animal_id ASC)
 CREATE INDEX vets_id_visits_index ON visits(vets_id ASC)
+CREATE INDEX owners_id_visits_index ON visits(owners_id ASC) 
