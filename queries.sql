@@ -139,3 +139,10 @@ JOIN animal ON animal.id = visits.animal_id
 JOIN species ON species.id = animal.species_id
 WHERE vets.name = 'Maisy Smith'
 GROUP BY species.name
+
+-- Phase 5 database performance audit 
+
+EXPLAIN ANALYSE SELECT COUNT(*) FROM visits WHERE animal_id = 4;
+EXPLAIN ANALYSE SELECT * FROM visits WHERE vets_id = 2;
+EXPLAIN ANALYSE SELECT visits_id, animal_id, vets_id, date_of_visit FROM visits WHERE vets_id = 2;
+EXPLAIN ANALYSE SELECT * FROM owners WHERE email = 'owner_18327@mail.com'
