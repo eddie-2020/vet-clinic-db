@@ -7,10 +7,6 @@ In this project I have created a relational database to create the initial data 
 ![](/assets/createTable1.PNG)
 ![](/assets/createTable2.PNG)
 
-# Messages
-
-
-
 # Prerequisite
 
 - Create a table named `animals` with the following columns:
@@ -38,6 +34,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
+## Database with the 6 connected ``queries`` (Database Diagram)
+
+## After adding FK indexes to animal table
+![](/assets/drawSQL-export-2022-03-05_00_27.png)
+
+## Phase II ``Vet Clinic`` medical diagram
+![](/assets/drawSQL-export-2022-03-05_00_26.png)
 
 ## Authors
 

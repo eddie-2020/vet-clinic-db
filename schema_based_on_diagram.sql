@@ -1,0 +1,1 @@
+-- Clinic database tabular structure
