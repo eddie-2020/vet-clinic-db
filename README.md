@@ -39,7 +39,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ## After adding FK indexes to animal table
 ![](/assets/drawSQL-export-2022-03-05_00_27.png)
 
-## Phase II ``Vet Clinic`` medical diagram
+## Phase II medical diagram
 ![](/assets/drawSQL-export-2022-03-05_00_26.png)
 
 ## Authors
